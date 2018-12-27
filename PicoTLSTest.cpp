@@ -158,6 +158,7 @@ void PicoTLSTest::writeToSocket()
     ptls_buffer_init(&sendbuf, const_cast<char*>(""), 0);
 
     int msgSize = read(STDIN_FILENO, buffer, sizeof(buffer));
+    buffer[msgSize-1] = '\0';
 
     if (msgSize > 0) {
         int ret = ptls_send(tls, &sendbuf, buffer, msgSize);
