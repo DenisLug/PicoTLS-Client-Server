@@ -13,10 +13,6 @@ matrix:
 
 language: cpp
 
-branches:
-  only:
-  - travis
-
 script: make
 
 before_install:
