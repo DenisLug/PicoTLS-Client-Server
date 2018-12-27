@@ -17,6 +17,8 @@ branches:
   only:
   - travis
 
+script: make
+
 before_install:
     - eval "${MATRIX_EVAL}"
 
