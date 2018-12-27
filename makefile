@@ -1,7 +1,7 @@
 CC = g++
 FLAGS = -Wall -g
-INCLUDES = -I/home/denis/TLS-Bibliotheken/picotls/include
-LIBS = -L/home/denis/TLS-Bibliotheken/openssl-OpenSSL_1_1_1-stable -L/home/denis/TLS-Bibliotheken/picotls -lcrypto -lpicotls-core -lpicotls-openssl
+INCLUDES = -I/tmp/picotls-d94a67d4d9733fa7b72c331d238c6160298d39b3/include
+LIBS = -L/tmp/picotls-d94a67d4d9733fa7b72c331d238c6160298d39b3 -lcrypto -lpicotls-core -lpicotls-openssl
 OBJ = Main.o PicoTLSTest.o
 
 # Link files
