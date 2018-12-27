@@ -3,6 +3,8 @@ branches:
   only:
   - travis
 install:
-  - wget https://github.com/h2o/picotls/archive/d94a67d4d9733fa7b72c331d238c6160298d39b3.zip -O /tmp/picotls.zip
-  - cd /tmp && unzip picotls.zip
-  - cd picotls-d94a67d4d9733fa7b72c331d238c6160298d39b3 && cmake . && make && make check
+  - cd /tmp
+  - git clone https://github.com/h2o/picotls.git && cd picotls
+  - git submodule init && git submodule update
+  - cmake . && make && make check
+  - cd $TRAVIS_BUILD_DIR && make
