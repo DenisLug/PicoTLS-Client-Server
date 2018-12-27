@@ -1,4 +1,4 @@
-CC = g++
+CC = g++-4.9
 FLAGS = -Wall -g
 INCLUDES = -I/tmp/picotls/include
 LIBS = -L/tmp/picotls -lcrypto -lpicotls-core -lpicotls-openssl
