@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/DenisLug/PicoTLS-Client-Server.svg?branch=master)](https://travis-ci.com/DenisLug/PicoTLS-Client-Server)
+
 # PicoTLS client/server application
 
 This application shows an example of a client/server implementation with PicoTLS.
